@@ -17,13 +17,13 @@
 </head>
 
 
-<body>
+<body onLoad="playSlide()">
 
     <div id="contanier">
-    
+        
         <header id="header">
         
-            <div id="logo">LOGO</div>
+            <div id="logo"><img src="images/logo.jpg" rel="로고" /></div>
         
             <nav id="navi">
                 <ul id="menu">
@@ -56,16 +56,72 @@
                         <ul class="subMenu">
                             <li class="sub"><a href="#">공지사항</a></li>
                             <li class="sub"><a href="#">자주묻는질문</a></li>
-                            <li class="sub"><a href="#">자료</a></li>
+                            <li class="sub"><a href="#">자료실</a></li>
                         </ul><!-- subMenu -->
                     </li>
                     
-                </ul>
+                </ul>  <!-- #menu -->
             </nav>
             
         </header>
+
         
-    </div>
+        <div id="rightBox">
+            
+            <section id="secB">
+                <div id="slideBox">
+                <img src="images/image1.jpg" alt="이미지" class="slide" />
+                <img src="images/image2.jpg" alt="이미지" class="slide" />
+                <img src="images/image3.jpg" alt="이미지" class="slide" />
+                </div>
+            </section>  <!-- #secB -->  
+            
+            
+    <!----------------------------- secC ----------------------------->
+            <section id="secC">
+                
+                <div class="box1">
+                <button id="btn1" class="button active">공지사항</button>
+                <button id="btn2" class="button">갤러리</button>
+                    
+                <ul id="notice">
+                    <li><a href="#" class="list">행사장 주변 주차시설 이용안내</a>
+                    <span>2018.11.26</span></li> 
+                </ul>
+                         
+                <ul id="notice">
+                    <li><a href="#" class="list">빛축제 이벤트(입장료 할인)</a>
+                    <span>2018.11.15</span></li> 
+                </ul>
+                         
+                <ul id="notice">
+                    <li><a href="#" class="list">온라인 해운대 빛축제 서포터즈 모집</a> 
+                    <span>2018.11.10</span></li>
+                </ul>
+                         
+                <ul id="notice">
+                    <li><a href="#" class="list">빛축제 행사프로그램 안내</a> 
+                    <span>2018.11.08</span></li>
+                </ul>
+                         
+                <ul id="notice">
+                    <li><a href="#" class="list">2018 제5회 해운대라꼬 빛축제 개최</a><span>2018.11.06</span></li> 
+                    
+                </ul>
+                    
+                </div>  <!-- .box1 -->    
+                
+            </section>  <!-- #secC -->  
+            
+            
+            
+            
+            
+            
+            
+        </div>  <!-- #rightBox -->
+         
+    </div>  <!-- #contanier -->
 
 </body>
 </html>

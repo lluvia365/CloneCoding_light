@@ -8,7 +8,7 @@ body {
 }
 
 
-#container {
+#contanier {
     width:1000px;
     margin-right: auto;  /* 왼쪽정렬 */
     display: flex;
@@ -16,7 +16,7 @@ body {
 
 #header {
     width:200px;
-    background-color:#3497d9;
+    background-color:#3497d9;   
 }
 
 #logo {
@@ -50,6 +50,56 @@ a { text-decoration:none; color:#222328 }
 }
 
 .sub:hover { background:#808cf8 }
+
+
+#rightBox {
+    width:800px;
+}
+
+#secB {  /* 슬라이드 */
+    width:100%; height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+#slideBox {
+    position:absolute;
+    top:0; left:0;
+    transition:.5s;
+}
+
+.slide { display: block }
+
+
+/*----------------------------- secC -----------------------------*/
+#secC {
+    width:100%; height: 200px;
+    display: flex;
+    background:#FFF;
+}
+
+#secC .box1 {
+    width:300px;
+    padding:5px;
+}
+
+.active { background:#FFF; color:#222328 }
+
+#notice {
+    background:#FFF;
+    list-style: none;
+    padding:0;
+    font-size:0.8rem;
+}
+
+#notice>li {
+    padding:6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 
 
 
