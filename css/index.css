@@ -1,2 +1,60 @@
 @charset "utf-8";
 
+*{ box-sizing: border-box; margin: 0 }
+
+body {
+    font-family: "맑은 고딕","굴림";
+    background-color:#FFF; color:#222328;
+}
+
+
+#container {
+    width:1000px;
+    margin-right: auto;  /* 왼쪽정렬 */
+    display: flex;
+}
+
+#header {
+    width:200px;
+    background-color:#3497d9;
+}
+
+#logo {
+    width:200px;
+    height:40px;
+    margin-bottom:30px;
+}
+
+#navi {
+    padding:5px;
+    width:100%;
+}
+
+#navi ul { list-style: none; padding:0 }
+
+a { text-decoration:none; color:#222328 }
+
+.main {
+    background:#80c8f8;
+    font-size:1.2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.main:hover { background:#1894e7 }
+
+.subMenu {
+    background:#FFF;
+    font-size:1rem;
+    display: none;
+}
+
+.sub:hover { background:#808cf8 }
+
+
+
+
+
+
+
+
