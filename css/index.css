@@ -62,13 +62,14 @@ a { text-decoration:none; color:#222328 }
     overflow: hidden;
 }
 
-#slideBox {
+.slide { 
+
     position:absolute;
     top:0; left:0;
-    transition:.5s;
+    display: none;
 }
 
-.slide { display: block }
+#secB>a:first-child >.slide { display: block }
 
 
 /*----------------------------- secC -----------------------------*/
@@ -83,6 +84,14 @@ a { text-decoration:none; color:#222328 }
     padding:5px;
 }
 
+.button {
+    border:none; background:#777;
+    width:100px; line-height: 40px;
+    text-align: center;
+    color:#FFF;
+    cursor: pointer;
+}
+
 .active { background:#FFF; color:#222328 }
 
 #notice {
@@ -93,17 +102,29 @@ a { text-decoration:none; color:#222328 }
 }
 
 #notice>li {
-    padding:6px;
+    padding:5px;
     display: flex;
     justify-content: space-between;
 }
 
+#nocite>li>a {
+    text-decoration: none;
+    color:#222328;
+}
 
+#nocite>li>a:hover { text-decoration: underline }
 
+#gallery {
+    background:#FFF;
+    height:150px;
+    text-align: center;
+    display: none;
+}
 
-
-
-
+#gallery img {
+    width:80px;
+    margin:10px 5px;
+}
 
 
 
