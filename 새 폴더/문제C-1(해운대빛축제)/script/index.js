@@ -43,6 +43,13 @@ $(function(){
     })
     
     
+    $('.text').eq(0).click(function(){
+        $('#modal').css('display','flex');
+    })
+    
+    $('#modalClose').click(function(){
+        $('#modal').hide();
+    })
     
 });  // $(function)
 

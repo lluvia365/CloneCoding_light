@@ -119,8 +119,47 @@ a { text-decoration:none; color: #222328}  /* 모든 a태그 밑줄 제거 */
 }
 
 
+#foot {
+    display: flex;
+    width:100%;
+    height: 100px;
+    background:#777;
+    color:#CCC;
+}
+
+#logo2{ padding-top:30px }
+
+#footContent>div {
+    text-align: center;
+    padding:4px;
+}
 
 
+#modal {
+    position: fixed;
+    top:0; left:0;
+    width:100%; height: 100%;
+    background:rgba(0,0,0,.5);
+    display: none;  /* flex로 위치 맞추고 none으로 바꿔놓음 */
+    justify-content: center;
+    align-items: center;
+}
 
+#modalContents {
+    width:800px;  /* 세로값은 정할수 없음 */
+    background:#FFF;
+    padding:10px;    
+}
+
+#modalContents>h2 { margin-bottom: 30px }
+#modalContents>p { line-height: 2rem }
+
+#modalClose {
+    display: block;  /* margin값으로 위치조정위해 */
+    margin:20px 0 20px auto;
+    background:#3497d9; color:#FFF;
+    border:none; padding:10px;
+    cursor: pointer;
+}
 
 
