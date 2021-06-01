@@ -28,7 +28,7 @@ body {
 }
 
 #navi ul { list-style:none; padding:0 }
-a { text-decoration:none; color: #222328;}
+a { text-decoration:none; color: #222328}  /* 모든 a태그 밑줄 제거 */
 
 .main {
     background: #80c8f8;
@@ -70,9 +70,56 @@ a { text-decoration:none; color: #222328;}
     display: flex;
 }
 
+.box1 { width:400px }
+
 .button {
-    
+    background:#999;
+    border:none;
+    line-height: 30px;
+    cursor: pointer;
 }
+
+.button:hover { background:#FFF }
+
+.active { background:#FFF }  /* 현재 활성화된 콘텐츠 */
+
+.btn1 { margin-right:-6px }
+
+#notice {
+    list-style: none;
+    padding:0;
+    background:#FFF;
+    padding:5px;
+}
+
+.list {
+    line-height: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text:hover { text-decoration:underline }
+
+
+#gallery {
+    height: 160px;
+    padding:5px;
+    background:#FFF;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery img { margin:0 5px }
+
+
+.box2 {
+    width:200px;
+    text-align: center;
+}
+
+
+
 
 
 
