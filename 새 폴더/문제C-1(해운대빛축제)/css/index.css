@@ -62,10 +62,17 @@ a { text-decoration:none; color: #222328;}
 /* #secB>a:first-child>.slide { display: block } 이거대신 js에서 지정해도됨 */
 
 
+#secC {
+    width:100%;
+    height: 200px;
+    background:#cbff00;
+    padding:5px;
+    display: flex;
+}
 
-
-
-
+.button {
+    
+}
 
 
 
