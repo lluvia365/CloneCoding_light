@@ -1,128 +1,193 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!doctype html>
 
-<title> 해운대 빛 축제 </title>
+
+<html lang="ko">
+    
+<head>
+    <meta charset="utf-8" />
+    <title>해운대 빛 축제</title>
     
     <link href="css/index.css" rel="stylesheet" />
-        
+    
     <script src="script/jquery-1.12.4.js"></script>
-        
     <script src="script/index.js"></script>
+    
+</head>    
 
-
-</head>
-
-
-<body onLoad="playSlide()">
-
-    <div id="contanier">
+<body onLoad="setInterval('slide()',3000)">    
+    
+    <div id="container">  <!-- 전체박스 -->
         
-        <header id="header">
-        
-            <div id="logo"><img src="images/logo.jpg" rel="로고" /></div>
-        
+        <header id="header">  <!-- 왼쪽박스  -->
+            
+            <a href="#"><img src="images/logo.png" alt="LOGO" /></a>
+            
             <nav id="navi">
                 <ul id="menu">
-                    
-                    <li class="main"><a href="#">이용안내</a>
+                    <li class="main"><a href='#'>이용안내</a>
                         <ul class="subMenu">
                             <li class="sub"><a href="#">이용방법</a></li>
                             <li class="sub"><a href="#">이용방법</a></li>
                             <li class="sub"><a href="#">이용방법</a></li>
-                        </ul><!-- subMenu -->
+                        </ul>
                     </li>
-                                       
-                    <li class="main"><a href="#">이벤트정보</a>
+                    <li class="main"><a href='#'>이용안내</a>
                         <ul class="subMenu">
-                            <li class="sub"><a href="#">현장이벤트</a></li>
-                            <li class="sub"><a href="#">온라인이벤트</a></li>
-                            <li class="sub"><a href="#">이벤트예약</a></li>
-                        </ul><!-- subMenu -->
+                            <li class="sub"><a href="#">이용방법</a></li>
+                            <li class="sub"><a href="#">이용방법</a></li>
+                            <li class="sub"><a href="#">이용방법</a></li>
+                        </ul>
                     </li>
-                                       
-                    <li class="main"><a href="#">프로그램</a>
+                    <li class="main"><a href='#'>이용안내</a>
                         <ul class="subMenu">
-                            <li class="sub"><a href="#">프로그램안내</a></li>
-                            <li class="sub"><a href="#">온라인예약</a></li>
-                            <li class="sub"><a href="#">단체예약상담</a></li>
-                        </ul><!-- subMenu -->
+                            <li class="sub"><a href="#">이용방법</a></li>
+                            <li class="sub"><a href="#">이용방법</a></li>
+                            <li class="sub"><a href="#">이용방법</a></li>
+                        </ul>
                     </li>
-                                       
-                    <li class="main"><a href="#">고객센터</a>
+                    <li class="main"><a href='#'>이용안내</a>
                         <ul class="subMenu">
-                            <li class="sub"><a href="#">공지사항</a></li>
-                            <li class="sub"><a href="#">자주묻는질문</a></li>
-                            <li class="sub"><a href="#">자료실</a></li>
-                        </ul><!-- subMenu -->
+                            <li class="sub"><a href="#">이용방법</a></li>
+                            <li class="sub"><a href="#">이용방법</a></li>
+                            <li class="sub"><a href="#">이용방법</a></li>
+                        </ul>
                     </li>
-                    
-                </ul>  <!-- #menu -->
+                </ul>
             </nav>
             
         </header>
-
         
-        <div id="rightBox">
+        <div id="contents">  <!-- 오른쪽박스 -->
             
             <section id="secB">
-
-                <a href="#"><img src="images/image1.jpg" alt="이미지" class="slide" /></a>
-                <a href="#"><img src="images/image2.jpg" alt="이미지" class="slide" /></a>
-                <a href="#"><img src="images/image3.jpg" alt="이미지" class="slide" /></a>
-       
-            </section>  <!-- #secB -->  
+                <a href="#"><img src="images/image1.jpg" alt="슬라이드1" class="slide" /></a>
+                <a href="#"><img src="images/image2.jpg" alt="슬라이드2" class="slide" /></a>
+                <a href="#"><img src="images/image3.jpg" alt="슬라이드3" class="slide" /></a>
+            </section>
             
-            
-    <!----------------------------- secC ----------------------------->
             <section id="secC">
                 
                 <div class="box1">
-                <button id="btn1" class="button active">공지사항</button>
-                <button id="btn2" class="button">갤러리</button>
+                    <button class="button btn1 active">공지사항</button>
+                    <button class="button btn2">갤러리</button>
                     
-                <ul id="notice">
-                    <li><a href="#" class="list">행사장 주변 주차시설 이용안내</a>
-                    <span>[2018.11.26]</span></li> 
-
-                    <li><a href="#" class="list">빛축제 이벤트(입장료 할인)</a>
-                    <span>[2018.11.15]</span></li> 
-
-                    <li><a href="#" class="list">온라인 해운대 빛축제 서포터즈 모집</a> 
-                    <span>[2018.11.10]</span></li>
-
-                    <li><a href="#" class="list">빛축제 행사프로그램 안내</a> 
-                    <span>[2018.11.08]</span></li>
-
-                    <li><a href="#" class="list">2018 제5회 해운대라꼬 빛축제 개최</a>
-                        <span>[2018.11.06]</span></li> 
+                    <ul id="notice">
+                        
+                        <li class="list">
+                            <a href="#" class="text">행사장 주변 주차시설 이용안내</a>
+                            <span>[2018.11.26]</span>
+                        </li>
+                           
+                        <li class="list">
+                            <a href="#" class="text">빛축제 이벤트(입장료 할인)</a>
+                            <span>[2018.11.15]</span>
+                        </li>
+                           
+                        <li class="list">
+                            <a href="#" class="text">온라인 해운대 빛축제 서포터즈 모집</a>
+                            <span>[2018.11.10]</span>
+                        </li>
+                           
+                        <li class="list">
+                            <a href="#" class="text">빛축제 행사프로그램 안내</a>
+                            <span>[2018.11.26]</span>
+                        </li>
+                           
+                        <li class="list">
+                            <a href="#" class="text">2018 제5회 해운대라꼬 빛축제 개최</a>
+                            <span>[2018.11.26]</span>
+                        </li>
+                        
+                    </ul>
                     
-                </ul>
                     
-                <div id="gallery">
-                    <a href="#"><img src="images/gallery1.jpg" alt="갤러리1" /></a>
-                    <a href="#"><img src="images/gallery2.jpg" alt="갤러리2" /></a>
-                    <a href="#"><img src="images/gallery3.jpg" alt="갤러리3" /></a>
-                </div>    
+                    <div id="gallery">
+                        <a href="#"><img src="images/image4.jpg" alt="갤러리1" /></a>                       
+                        <a href="#"><img src="images/image5.jpg" alt="갤러리1" /></a>                        
+                        <a href="#"><img src="images/image6.jpg" alt="갤러리1" /></a>    
+                    </div>
+   
+                </div>  <!-- #box1 -->
+                
+                <div class="box2">
+                    <a href="#"><img src="images/banner.jpg" alt="배너" /></a>
+                </div>  <!-- #box2 -->
+                                 
+                <div class="box3">
+                    <a href="#"><img src="images/go.jpg" alt="바로가기" /></a>
+                </div>  <!-- #box3 -->
+                                
+            </section>
+            
+            
+            <footer id="foot">
+                <div id="logo2">
+                    <a href="#"><img src="images/logo22.png" alt="로고" /></a>
+                </div>
+                
+                <div id="footContent">
+                    <div>
+                        <a href="#">전화번호안내</a>,
+                        <a href="#">개인정보처리방침</a>,
+                        <a href="#">저작권보호정책</a>,
+                        <a href="#">찾아오시는길</a>,
+                    </div>
+                    
+                    <div>
+                        <p>해운대구 빛축제 운영위원회  사업자등록번호 : 123-04-12312<br />
+                            (우)48095 부산광역시 해운대구 중동2로 11(중동)<br /> 
+                            대표전화 : (051)749-4000 팩스 : (051)749-4444</p>
+                    </div>
+                    
+                </div>  <!-- #footContent -->
+            </footer>
+            
+        </div>  <!-- 오른쪽박스 #contents -->
+        
+        
+    </div>  <!-- 전체박스 #container -->
+    
+    
+    <div id="modal">
+        <div id="modalContents">
+            <h2>겨울철 대표축제인 제5회 해운대라꼬 빛축제를 아래와 같이 개최하오니 많은 참여바랍니다. </h2>
+            <p>○행사기간 : 2018. 12. 1(토) ～ 2019. 1. 31.(목), 약60일간<br /><br />
 
-                </div>  <!-- .box1 -->    
-                
-                
-                
-            </section>  <!-- #secC -->  
-            
-            
-            
-            
-            
-            
-            
-        </div>  <!-- #rightBox -->
-         
-    </div>  <!-- #contanier -->
+            ○ 행사구역 : 구남로 광장, (구)해운대역, 애향길, 젊음의거리, 해운대 시장, 해수욕장 이벤트광장 일원<br />
+            ○ 행사구성 : 빛조형물(LED라이팅쇼), 버스킹 공연, 인생샷 사진무료인화<br />
+             - 점 등 식 : 2018. 12. 1.(토) 18:00, 구남로 광장<br />
+             - 버스킹 공연 : 행사기간 중 해운대구홈페이지 사전접수 후 자율적 참여 (구남로 버스킹 존) <br />
+                ※ 버스킹참가팀 빛축제 기념품 증정<br />
+                버스킹 예약 바로가기<br /><br />
 
+            ○ 주 최 : 해운대구청, 해운대상권활성화재단<br /><br />
+
+            ○ 주제/부제 :『달빛바다 해운대를 품다』/해운대를 품은 달<br /> </p>
+            
+            <button id="modalClose">&times;닫기</button>
+        </div>  <!-- #modalContents -->
+        
+    </div>  <!-- #modal -->
+    
 </body>
+    
+    
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
